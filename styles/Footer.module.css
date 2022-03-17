@@ -1,0 +1,105 @@
+.container {
+  background-color: #222;
+}
+
+.mainContainer {
+  display: flex;
+  max-width: 1440px;
+  width: 90vw;
+  gap: 5vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+}
+
+.item:first-child {
+  width: 300px;
+  height: 428px;
+  margin: 2rem;
+  position: relative;
+}
+
+.item:last-child {
+  padding: 50px 0;
+  gap: 20px;
+  justify-content: flex-end;
+  width: 600px;
+}
+
+.card {
+  flex: 1;
+}
+
+.cardWrapper {
+  display: flex;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--clr-3);
+}
+
+.text {
+  color: var(--clr-white);
+}
+
+.motto {
+  color: var(--clr-white);
+}
+
+@media screen and (max-width: 768px) {
+  .item:first-child {
+    display: none;
+  }
+  .card:first-child {
+    max-width: 100%;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .motto {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainContainer {
+    text-align: center;
+  }
+
+  .motto {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cardWrapper {
+    flex-direction: column;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

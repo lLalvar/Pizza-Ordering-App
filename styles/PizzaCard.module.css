@@ -1,0 +1,54 @@
+.mainContainer {
+  width: 22%;
+  padding: 20px 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--clr-2);
+  text-align: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.desc {
+  text-align: center;
+  color: #777;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .price,
+  .desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainContainer {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .price,
+  .desc {
+    font-size: 24px;
+  }
+}

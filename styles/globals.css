@@ -1,3 +1,10 @@
+:root {
+  --clr-white: #fff;
+  --clr-1: #d15c26;
+  --clr-2: #d2421e;
+  --clr-3: #ffbe6a;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +20,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@media (any-hover: none) {
+  * {
+    cursor: none !important;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+button:hover {
+  opacity: 0.9;
 }

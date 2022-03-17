@@ -1,0 +1,147 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 90vw;
+  padding: 50px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.imgContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0 20px;
+  text-align: center;
+}
+
+.name {
+  font-weight: 500;
+  color: var(--clr-2);
+  font-size: 18px;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wrapper {
+  background-color: #333;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-white);
+}
+
+.wrapper h2 {
+  margin-top: 0;
+}
+
+.totalTextTitle {
+  margin-right: 10px;
+}
+
+.button {
+  height: 36px;
+  color: var(--clr-2);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .imgContainer {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .name,
+  .total {
+    font-size: 24px;
+  }
+
+  .extras,
+  .price,
+  .quantity {
+    font-size: 22px;
+  }
+
+  .price::before {
+    content: 'Price: ';
+    font-weight: 500;
+  }
+  .quantity::before {
+    content: 'Quantity: ';
+    font-weight: 500;
+  }
+  .total::before {
+    content: 'Total: ';
+    font-weight: 500;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.paymentsMethods {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payButton {
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: var(--clr-white);
+  color: teal;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}

@@ -1,0 +1,54 @@
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.mainContainer {
+  padding: 50px;
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: left;
+}
+
+.button {
+  border: none;
+  color: var(-clr-white);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:first-child {
+  background-color: teal;
+  margin-right: 10px;
+}
+
+.button:last-child {
+  background-color: var(--clr-2);
+}
+
+.nextStageBtn {
+  background-color: var(--clr-1);
+}
+
+@media (max-width: 950px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .mainContainer {
+    padding: 50px 10px;
+  }
+
+  .table {
+    border-spacing: 5px;
+    text-align: left;
+  }
+}
